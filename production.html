@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo-122x113.jpeg" type="image/x-icon">
+  <meta name="description" content="Website Builder Description">
+  <title>Production</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+  <style>
+      body{
+          background-color: beige;
+      }
+        .bande{
+            background-color: #1E1E2E;
+            position: absolute;
+            border: solid; 
+            border-width: 1px;    
+            border-color: aliceblue;              
+            top: 100px;
+            left: 10px;
+            right: 10px;              
+            height: 100px;       
+        }
+        .pie{
+            background-color: #1E1E2E;
+            position: absolute;
+            border: solid;
+            border-width: 1px;          
+            border-color: aliceblue;          
+            top: 202px;
+            left: 10px;           
+            right: 678px; 
+            float: right;
+        }
+        .bar{
+            background-color: #1E1E2E;
+            position: absolute;
+            border: solid; 
+            border-width: 1px;         
+            border-color: aliceblue;                 
+            top: 202px;          
+            left: 678px;
+            right: 10px;
+            float: left;
+        }
+        .lineBar{
+            background-color: #1E1E2E;
+            position: absolute;
+            border: solid; 
+            border-width: 1px;   
+            border-color: aliceblue;                 
+            top: 530px;
+            left: 10px;
+            float: right;
+            right: 678px; 
+        }
+        .line{
+            background-color: #1E1E2E;
+            position: absolute;
+            border: solid; 
+            border-width: 1px;      
+            border-color: aliceblue;           
+            top: 530px;
+            left: 678px;
+            right: 10px;
+            float: left;
+            
+        }   
+  </style>
+
+  
+</head>
+<body>
+  <section class="menu cid-rYHbQxcVNt" once="menu" id="menu1-1o">
+
+    
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                         <img src="assets/images/logo-122x113.jpeg" alt="Mobirise" title="" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Accueil</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white display-7" href="presentation.html"><span class="mbri-pages mbr-iconfont mbr-iconfont-btn"></span>
+                        Présentation</a></li><li class="nav-item"><a class="nav-link link text-white display-7" href="visualisations.html" aria-expanded="false"><span class="mbri-growing-chart mbr-iconfont mbr-iconfont-btn"></span>
+                        Visualisations
+                    </a></li><li class="nav-item"><a class="nav-link link text-white display-7" href="Dataviz-cedeao.pdf"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>
+                        Article</a></li><li class="nav-item">
+                    <a class="nav-link link text-white display-7" href="index.html#testimonials1-t"><span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        
+                        A propos de nous&nbsp;</a>  
+                </li></ul>
+            
+        </div>
+    </nav>
+</section>
+
+
+
+
+  
+  
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+
+    <div class = "master commun">
+            
+        <div class = "bande">
+        <marquee> <h2 style="color:white;"> Visualisation de la production d'électricité dans la CEDEAO entre 2012-2017</h2></marquee>
+        </div>
+
+        <div class = "pie com">pie chart
+
+                 <!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+
+<!-- Color scale -->
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<!-- Add 2 buttons -->
+<button><select>
+  <option onclick="update(data1)" >Bénin</option>
+  <option onclick="update(data2)">Bourkina Fasso</option>
+  <option onclick="update(data3)">Cap Vert</option>
+  <option onclick="update(data4)">Cote d'Ivoire</option>
+  <option onclick="update(data5)">Gambie</option>
+  <option onclick="update(data6)">Ghana</option>
+  <option onclick="update(data7)">Guinée</option>
+  <option onclick="update(data8)">Guinée Bissau</option>
+  <option onclick="update(data9)">Libéria</option>
+  <option onclick="update(data10)">Mali</option>
+  <option onclick="update(data11)">Niger</option>
+  <option onclick="update(data12)">Nigéria</option>
+  <option onclick="update(data13)">Sénégal</option>
+  <option onclick="update(data14)">Sierra Leone</option>
+  <option onclick="update(data15)">Togo</option>
+</select></button>
+
+<!-- Create a div where the graph will take place -->
+<div id="my_dataviz"></div>
+<script>
+
+    // set the dimensions and margins of the graph
+    var width = 400
+        height = 350
+        margin = 40
+    
+    // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+    var radius = Math.min(width, height) / 2 - margin
+    
+    // append the svg object to the div called 'my_dataviz'
+    var svg = d3.select("#my_dataviz")
+      .append("svg")
+        .attr("width", width)
+        .attr("height", height)
+        .append("g")
+        .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+    
+    // create 2 data_set
+    var data1 = {a: 48,  b: 92, c:239, d:330, e:276, f:331}
+    var data2 = {a: 625, b: 731, c:870, d:999, e:979, f:1095}
+    var data3 = {a: 375, b: 404, c:409, d:421, e:444, f:492}
+    var data4 = {a: 7016, b: 7650, c:8286, d:8711, e:10253, f:10123}
+    var data5 = {a: 266, b: 261, c:281, d:297, e:314, f:322}
+    var data6 = {a: 12204, b: 13050, c:13143, d:11672, e:13203, f:14248}
+    var data7 = {a: 728, b: 664, c:712, d:1118, e:1596, f:1753}
+    var data8 = {a: 34, b: 35, c:35, d:36, e:38, f:39}
+    var data9 = {a: 340, b: 340, c:340, d:350, e:440, f:437}
+    var data10 = {a: 1328, b: 1434, c:1626, d:1772, e:1965, f:1972}
+    var data11 = {a: 398, b: 516, c:521, d:522, e:442, f:566}
+    var data12 = {a: 28548, b:28927, c:32275, d:32463, e:31831, f:32249}
+    var data13 = {a: 2217, b: 3253, c:3575, d:3818, e:4097, f:4493}
+    var data14 = {a: 179, b: 164, c:181, d:260, e:303, f:303}
+    var data15= {a: 399, b: 360, c:358, d:444, e:950, f:690}
+    // set the color scale
+    var color = d3.scaleOrdinal()
+      .domain(["2012", "2013", "2014", "2015", "2016", "2017"])
+      .range(d3.schemeDark2);
+    
+    // A function that create / update the plot for a given variable:
+    function update(data) {
+    
+      // Compute the position of each group on the pie:
+      var pie = d3.pie()
+        .value(function(d) {return d.value; })
+        .sort(function(a, b) { console.log(a) ; return d3.ascending(a.key, b.key);} ) // This make sure that group order remains the same in the pie chart
+      var data_ready = pie(d3.entries(data))
+    
+      // map to data
+      var u = svg.selectAll("path")
+        .data(data_ready)
+    
+      // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+      u
+        .enter()
+        .append('path')
+        .merge(u)
+        .transition()
+        .duration(1000)
+        .attr('d', d3.arc()
+          .innerRadius(0)
+          .outerRadius(radius)
+        )
+        .attr('fill', function(d){ return(color(d.data.key)) })
+        .attr("stroke", "white")
+        .style("stroke-width", "2px")
+        .style("opacity", 1)
+    
+      // remove the group that is not present anymore
+      u
+        .exit()
+        .remove()
+     }
+    
+    // Initialize the plot with the first dataset
+    update(data1)
+    
+ //Legende
+ svg.append("text")
+                            .attr("text-anchor", "end")
+                            .attr("x", 5)
+                            .attr("y", -150)
+                            .text("Proportion de la prodution de 2012 à 2017")
+                            .attr("fill", "white")
+                            .style("text-anchor", "middle")
+                            .style("text-align", "center")
+                            .style("font-family", " Verdana")
+                            .style("font-size", "10");
+ svg.append("text")
+    				.attr("text-anchor", "end")
+    				.attr("x", 180)
+    				.attr("y", -25)
+    				.text("2012")
+                    .attr("fill", "white")
+					.style("text-anchor", "middle")
+					.style("text-align", "center")
+					.style("font-family", " Verdana")
+					.style("font-size", "10");
+ svg.append("text")
+    				.attr("text-anchor", "end")
+    				.attr("x", 180)
+    				.attr("y", 1)
+    				.text("2013")
+                    .attr("fill", "white")
+					.style("text-anchor", "middle")
+					.style("text-align", "center")
+					.style("font-family", " Verdana")
+					.style("font-size", "10");
+svg.append("text")
+    				.attr("text-anchor", "end")
+    				.attr("x", 180)
+    				.attr("y", 25)
+    				.text("2014")
+                    .attr("fill", "white")
+					.style("text-anchor", "middle")
+					.style("text-align", "center")
+					.style("font-family", " Verdana")
+					.style("font-size", "10");
+svg.append("text")
+    				.attr("text-anchor", "end")
+    				.attr("x", 180)
+    				.attr("y", 50)
+    				.text("2015")
+                    .attr("fill", "white")
+					.style("text-anchor", "middle")
+					.style("text-align", "center")
+					.style("font-family", " Verdana")
+					.style("font-size", "10");
+svg.append("text")
+    				.attr("text-anchor", "end")
+    				.attr("x", 180)
+    				.attr("y", 75)
+    				.text("2016")
+                    .attr("fill", "white")
+					.style("text-anchor", "middle")
+					.style("text-align", "center")
+					.style("font-family", " Verdana")
+					.style("font-size", "10");
+ svg.append("text")
+    				.attr("text-anchor", "end")
+    				.attr("x", 180)
+    				.attr("y", 100)
+    				.text("2017")
+                    .attr("fill", "white")
+					.style("text-anchor", "middle")
+					.style("text-align", "center")
+					.style("font-family", " Verdana")
+					.style("font-size", "10");
+
+svg.append("rect")
+ .attr("x", 140)
+ .attr("y", -40)
+ .attr("width", 20)
+ .attr("height", 20)
+ .attr("fill", "#1B9E77")
+ .attr("text", '2012')
+ 
+ svg.append("rect")
+ .attr("x", 140)
+ .attr("y", -15)
+ .attr("width", 20)
+ .attr("height", 20)
+ .attr("fill", "#D95F02")
+
+ svg.append("rect")
+ .attr("x", 140)
+ .attr("y", 10)
+ .attr("width", 20)
+ .attr("height", 20)
+ .attr("fill", "#7570B3")
+ svg.append("rect")
+ .attr("x", 140)
+ .attr("y", 35)
+ .attr("width", 20)
+ .attr("height", 20)
+ .attr("fill", "#666666")
+ svg.append("rect")
+ .attr("x", 140)
+ .attr("y", 60)
+ .attr("width", 20)
+ .attr("height", 20)
+ .attr("fill", "#E7298A")
+ svg.append("rect")
+ .attr("x", 140)
+ .attr("y", 85)
+ .attr("width", 20)
+ .attr("height", 20)
+ .attr("fill", "#A6761D")
+</script>
+ </div>
+
+        <div class = "bar com">
+            <canvas id = "barProd"></canvas>
+        </div>
+
+        <div class = "lineBar com">
+            <canvas id = "lineBarProd"></canvas>
+        </div>
+
+        <div class = "line com">
+            <canvas id = "ligneProd"></canvas>
+        </div>
+    </div>
+
+    <script>
+        var ctx = document.getElementById("barProd").getContext("2d");
+
+        var mixedChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                datasets: [
+                    {
+                    label: "2012",
+                    data: [48, 625, 375, 7016, 266, 12204, 728, 34, 340, 1328, 398, 28748, 2917, 179, 399],
+                    backgroundColor: "orange",
+                    borderColor: "rgba(255,165,0,0.5)",
+                    borderWidth: 3,
+                    order: 1
+                    }, 
+                    {
+                    label: "2013",
+                    data: [92, 731, 404, 7650, 261, 13050, 654, 35, 340, 1434, 516, 28927, 3253, 164, 360],
+                    type: "bar",
+                    backgroundColor: "lime",
+                    borderColor: "lime",
+                    borderWidth: 3,
+                    order: 2
+                    },
+                    {
+                    label: "2014",
+                    data: [239, 870, 409, 8286, 281, 13143, 712, 35, 340, 1626, 521, 32275, 3575, 181, 358],
+                    type: "bar",
+                    backgroundColor: "indigo",
+                    borderColor: "indigo",
+                    borderWidth: 3,
+                    order: 3
+                    },
+                    {
+                    label: "2015",
+                    data: [330, 999, 421, 8711, 297, 11672, 1118, 36, 350, 1772, 522, 32463, 3818, 260, 444],
+                    type: "bar",
+                    backgroundColor: "blue",
+                    borderColor: "blue",
+                    borderWidth: 3,
+                    order: 4
+                    },
+                    {
+                    label: "2016",
+                    data: [276, 973, 444, 10253, 314, 13203, 1596, 38, 440, 1965, 442, 31831, 4097, 303, 950],
+                    type: "bar",
+                    backgroundColor: "red",
+                    borderColor: "red",
+                    borderWidth: 3,
+                    order: 5
+                    },
+                    {
+                    label: "2017",
+                    data: [331, 1095, 492, 10121, 322, 14248, 1753, 39, 437, 1972, 566, 32249, 4493, 303, 690],
+                    type: "bar",
+                    backgroundColor: "yellow",
+                    borderColor: "yellow",
+                    borderWidth: 3,
+                    order: 6
+                    }
+                ],
+                labels: ["Bénin", "Burkina Faso", "Cap Vert", "Côte d'Ivoire", "Gambie", "Ghana", "Guinée", 
+                        "Guinée Bissau", "Libéria", "Mali", "Niger", "Nigéria", "Sénégal", "Sierra Léone", "Togo"]
+            },
+
+            options: {
+                title: {
+                    text: "Production par années des pays (cliquez sur la légende pour voir une année)",
+                    display: true,
+                    fontColor: "white",
+                    fontSize: 14
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: "Pays",
+                            fontColor: "white",
+                            fontSize: 12
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        fontColor: "white",
+                        scaleLabel: {
+                                display: true,
+                                labelString: "Quantité de Production (millions KW/h)",
+                                fontColor: "white",
+                                fontSize: 12
+                        }
+                    }]
+                },
+                legend: {
+                    display: true,
+                },
+                tooltips:{
+                    intersect: false,
+                    backgroundColor: "#FFFFFF",
+                    bodyFontColor: "black",
+                    titleFontColor: "black"
+
+                    }
+            }
+            
+        });
+    </script>
+
+    <script>
+        var ctx = document.getElementById("lineBarProd").getContext("2d");
+        var mixedChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                datasets: [
+                    {
+                    label: "Production totale",
+                    data: [186493, 77520, 52037, 22153, 10097, 6561, 5293, 3201, 2965, 2545, 2247, 1390, 1316, 1741, 217],
+                    backgroundColor: "#90FF00",
+                    borderColor:  "#90FF00", 
+                    borderWidth: 4,
+                    order: 2
+                    }, 
+                    {
+                    label: "Production totale",
+                    data: [186493, 77520, 52037, 22153, 10097, 6561, 5293, 3201, 2965, 2545, 2247, 1390, 1316, 1741, 217],
+                    type: "line",
+                    backgroundColor: "",
+                    borderColor: "#00FFFF",
+                    borderWidth: 2,
+                    order: 1
+                    }
+                ],
+                labels: ["Nigéria", "Ghana", "Côte d'Ivoire", "Sénégal", "Mali", "Guinée", "Burkina Faso", "Togo", "Niger", 
+                        "Cap Vert", "Libéria", "Gambie", "Sierra Léone", "Bénin", "Guinée Bissau"],
+            },
+
+            options: {
+                title: {
+                    text: "Production totale des pays de 2012 à 2017",
+                    display: true,
+                    fontColor: "white",
+                    fontSize: 14
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: "Pays",
+                            fontColor: "white",
+                            fontSize: 12
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                                display: true,
+                                labelString: "Quantité de Production (millions KW/h)",
+                                fontColor: "white",
+                                fontSize: 12
+                        }
+                    }]
+                },
+                legend: {
+                    display: false
+                },
+                tooltips:{
+                    intersect: false,
+                    backgroundColor: "#FFFFFF",
+                    bodyFontColor: "black",
+                    titleFontColor: "black"
+
+                    }
+            }
+            
+        });
+    </script>
+
+    <script>
+        var ctx = document.getElementById('ligneProd').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["2012", "2013", "2014", "2015", "2016", "2017"],
+                datasets: [{
+                    label: "Production",
+                    borderColor: "blue",
+                    borderWidth: 4,
+                    data: [55605, 57871, 62251, 63213, 67125, 69111]
+                }]
+            },
+
+            options: {
+                title: {
+                    text: "Evolution de la quantité de production d'électricité de 2012 à 2017",
+                    display: true,
+                    fontColor: "white",
+                    fontSize: 14
+                },
+                elements: {
+                    point: {
+                        radius: 7,
+                        backgroundColor: "lime"
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: "Années",
+                            fontColor: "white",
+                            fontSize: 12
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                                display: true,
+                                labelString: "Quantité de production (millions KW/h)",
+                                fontColor: "white",
+                                fontSize: 12
+                        }
+                    }]
+                },
+                legend: {
+                    display: false
+                },
+                tooltips:{
+                    intersect: false,
+                    backgroundColor: "#FFFFFF",
+                    bodyFontColor: "black",
+                    titleFontColor: "black"
+    
+                    },
+            }
+        });
+    </script>
+
+<section class="engine"><a href="https://mobirise.info/c">website builder</a></section><section once="footers" class="cid-rXQuCGQ0my mbr-reveal" id="footer6-1c">
+    
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2020 MSDA - Université de Thiès</p>
+            </div>
+        </div>
+    </div>
+  <script src="assets/popper/popper.min.js"></script>
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+  <script src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+</section>
+  </body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html  >
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v4.12.3, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo-122x113.jpeg" type="image/x-icon">
+  <meta name="description" content="Web Page Generator Description">
+  
+  
+  <title>Consommation</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/animatecss/animate.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+  <style>
+        body{
+            background-color: beige;
+        }       
+        .bande{
+            background-color: #1E1E2E;
+            position: absolute;
+            border: solid; 
+            border-width: 1px;    
+            border-color: aliceblue;            
+            top: 100px;
+            left: 20px;
+            right: 20px;              
+            height: 100px;       
+        }
+        .pie{
+            position: absolute;
+            background-color: #1E1E2E;
+            border: solid;
+            border-width: 1px;          
+            border-color: black;   
+            top: 230px;        
+            right: 200px;
+            left: 200px; 
+        }
+        .bar{
+            position: absolute;
+            background-color: #1E1E2E;
+            border: solid; 
+            border-width: 1px;         
+            border-color: black;   
+            top: 640px;
+            left: 30px;
+            right: 30px;       
+        }
+        .lineBar{
+            position: absolute;
+            background-color: #1E1E2E;
+            border: solid; 
+            border-width: 1px;   
+            border-color: black;                  
+            top: 1290px;
+            left: 30px;
+            right: 678px; 
+        }
+        .line{
+            position: absolute;
+            background-color: #1E1E2E;
+            border: solid; 
+            border-width: 1px;      
+            border-color: black;            
+            top: 1290px;
+            left: 678px;
+            right: 30px; 
+        } 
+
+  </style>
+  
+</head>
+<body>
+  <section class="menu cid-rYHbQxcVNt" once="menu" id="menu1-1o">
+
+
+    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-logo">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                         <img src="assets/images/logo-122x113.jpeg" alt="Mobirise" title="" style="height: 3.8rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="index.html">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Accueil</a></span>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-white display-7" href="presentation.html"><span class="mbri-pages mbr-iconfont mbr-iconfont-btn"></span>
+                        Présentation</a></li><li class="nav-item"><a class="nav-link link text-white display-7" href="visualisations.html" aria-expanded="false"><span class="mbri-growing-chart mbr-iconfont mbr-iconfont-btn"></span>
+                        Visualisations
+                    </a></li><li class="nav-item"><a class="nav-link link text-white display-7" href="Dataviz-cedeao.pdf"><span class="mbri-edit mbr-iconfont mbr-iconfont-btn"></span>
+                        Article</a></li><li class="nav-item">
+                    <a class="nav-link link text-white display-7" href="index.html#testimonials1-t"><span class="mbri-search mbr-iconfont mbr-iconfont-btn"></span>
+                        
+                        A propos de nous&nbsp;</a>  
+                </li></ul>
+            </div>
+    </nav>
+</section>
+
+
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/viewportchecker/jquery.viewportchecker.js"></script>
+<script src="assets/dropdown/js/nav-dropdown.js"></script>
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>
+<script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+<script src="assets/tether/tether.min.js"></script>
+<script src="assets/theme/js/script.js"></script>
+
+
+ 
+  
+ <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+
+
+    <div class = "bande">
+        <marquee> <h2 style="color:white;"> Visualisation de la Consommation d'électricité dans la CEDEAO entre 2012-2017</h2></marquee>
+    </div>
+
+    <div class = "bar">
+        <canvas id = "barCons"></canvas>
+    </div>
+
+    <div class = "pie">
+       +
+        <script src="https://d3js.org/d3.v4.js"></script>
+
+
+        <!-- Color scale -->
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <!-- Add 2 buttons -->
+        <button><select>
+          <option onclick="update(data1)" >Bénin</option>
+          <option onclick="update(data2)">Bourkina Fasso</option>
+          <option onclick="update(data3)">Cap Vert</option>
+          <option onclick="update(data4)">Cote d'Ivoire</option>
+          <option onclick="update(data5)">Gambie</option>
+          <option onclick="update(data6)">Ghana</option>
+          <option onclick="update(data7)">Guinée</option>
+          <option onclick="update(data8)">Guinée Bissau</option>
+          <option onclick="update(data9)">Libéria</option>
+          <option onclick="update(data10)">Mali</option>
+          <option onclick="update(data11)">Niger</option>
+          <option onclick="update(data12)">Nigéria</option>
+          <option onclick="update(data13)">Sénégal</option>
+          <option onclick="update(data14)">Sierra Leone</option>
+          <option onclick="update(data15)">Togo</option>
+        </select></button>
+        
+        <!-- Create a div where the graph will take place -->
+        <div id="my_dataviz"></div>
+        <script>
+        
+            // set the dimensions and margins of the graph
+            var width = 400
+                height = 350
+                margin = 40
+            
+            // The radius of the pieplot is half the width or half the height (smallest one). I subtract a bit of margin.
+            var radius = Math.min(width, height) / 2 - margin
+            
+            // append the svg object to the div called 'my_dataviz'
+            var svg = d3.select("#my_dataviz")
+              .append("svg")
+                .attr("width", width)
+                .attr("height", height)
+                .append("g")
+                .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+            
+            // create 2 data_set
+            var data1 = {a: 872,  b: 942, c:953, d:1099, e:1071, f:1139}
+            var data2 = {a: 952, b: 152, c:1125, d:1200, e:1361, f:1452}
+            var data3 = {a: 266, b: 291, c:295, d:305, e:316, f:343}
+            var data4 = {a: 4708, b: 5046, c:5561, d:6023, e:6615, f:6318}
+            var data5 = {a: 208, b: 209, c:209, d:221, e:233, f:235}
+            var data6 = {a: 9906, b: 10636, c:10694, d:9778, e:11523, f:12120}
+            var data7 = {a: 604, b: 541, c:596, d:966, e:1405, f:1550}
+            var data8 = {a: 34, b: 35, c:35, d:36, e:38, f:39}
+            var data9 = {a: 256, b: 256, c:256, d:265, e:275, f:285}
+            var data10 = {a: 993, b: 929, c:1094, d:1211, e:1365, f:1342}
+            var data11 = {a: 826, b: 836, c:858, d:916, e:968, f:1014}
+            var data12 = {a: 25159, b:23487, c:24439, d:25091, e:25300, f:25774}
+            var data13 = {a: 2313, b: 3079, c:3245, d:3466, e:3734, f:3952}
+            var data14 = {a: 100, b: 69, c:86, d:177, e:210, f:210}
+            var data15= {a: 904, b: 937, c:1023, d:1138, e:1185, f:1313}
+            // set the color scale
+            var color = d3.scaleOrdinal()
+              .domain(["2012", "2013", "2014", "2015", "2016", "2017"])
+              .range(d3.schemeDark2);
+            
+            // A function that create / update the plot for a given variable:
+            function update(data) {
+            
+              // Compute the position of each group on the pie:
+              var pie = d3.pie()
+                .value(function(d) {return d.value; })
+                .sort(function(a, b) { console.log(a) ; return d3.ascending(a.key, b.key);} ) // This make sure that group order remains the same in the pie chart
+              var data_ready = pie(d3.entries(data))
+            
+              // map to data
+              var u = svg.selectAll("path")
+                .data(data_ready)
+            
+              // Build the pie chart: Basically, each part of the pie is a path that we build using the arc function.
+              u
+                .enter()
+                .append('path')
+                .merge(u)
+                .transition()
+                .duration(1000)
+                .attr('d', d3.arc()
+                  .innerRadius(0)
+                  .outerRadius(radius)
+                )
+                .attr('fill', function(d){ return(color(d.data.key)) })
+                .attr("stroke", "white")
+                .style("stroke-width", "2px")
+                .style("opacity", 1)
+            
+              // remove the group that is not present anymore
+              u
+                .exit()
+                .remove()
+             }
+            
+            // Initialize the plot with the first dataset
+            update(data1)
+            
+         //Legende
+         svg.append("text")
+                            .attr("text-anchor", "end")
+                            .attr("x", 5)
+                            .attr("y", -150)
+                            .text("Proportion de la consommation de 2012 à 2017")
+                            .attr("fill", "white")
+                            .style("text-anchor", "middle")
+                            .style("text-align", "center")
+                            .style("font-family", " Verdana")
+                            .style("font-size", "10");
+         
+         svg.append("text")
+                            .attr("text-anchor", "end")
+                            .attr("x", 180)
+                            .attr("y", -25)
+                            .text("2012")
+                            .attr("fill", "white")
+                            .style("text-anchor", "middle")
+                            .style("text-align", "center")
+                            .style("font-family", " Verdana")
+                            .style("font-size", "10");
+         svg.append("text")
+                            .attr("text-anchor", "end")
+                            .attr("x", 180)
+                            .attr("y", 1)
+                            .text("2013")
+                            .attr("fill", "white")
+                            .style("text-anchor", "middle")
+                            .style("text-align", "center")
+                            .style("font-family", " Verdana")
+                            .style("font-size", "10");
+        svg.append("text")
+                            .attr("text-anchor", "end")
+                            .attr("x", 180)
+                            .attr("y", 25)
+                            .text("2014")
+                            .attr("fill", "white")
+                            .style("text-anchor", "middle")
+                            .style("text-align", "center")
+                            .style("font-family", " Verdana")
+                            .style("font-size", "10");
+        svg.append("text")
+                            .attr("text-anchor", "end")
+                            .attr("x", 180)
+                            .attr("y", 50)
+                            .text("2015")
+                            .attr("fill", "white")
+                            .style("text-anchor", "middle")
+                            .style("text-align", "center")
+                            .style("font-family", " Verdana")
+                            .style("font-size", "10");
+        svg.append("text")
+                            .attr("text-anchor", "end")
+                            .attr("x", 180)
+                            .attr("y", 75)
+                            .text("2016")
+                            .attr("fill", "white")
+                            .style("text-anchor", "middle")
+                            .style("text-align", "center")
+                            .style("font-family", " Verdana")
+                            .style("font-size", "10");
+         svg.append("text")
+                            .attr("text-anchor", "end")
+                            .attr("x", 180)
+                            .attr("y", 100)
+                            .text("2017")
+                            .attr("fill", "white")
+                            .style("text-anchor", "middle")
+                            .style("text-align", "center")
+                            .style("font-family", " Verdana")
+                            .style("font-size", "10");
+        
+        svg.append("rect")
+         .attr("x", 140)
+         .attr("y", -40)
+         .attr("width", 20)
+         .attr("height", 20)
+         .attr("fill", "#1B9E77")
+         .attr("text", '2012')
+         
+         svg.append("rect")
+         .attr("x", 140)
+         .attr("y", -15)
+         .attr("width", 20)
+         .attr("height", 20)
+         .attr("fill", "#D95F02")
+        
+         svg.append("rect")
+         .attr("x", 140)
+         .attr("y", 10)
+         .attr("width", 20)
+         .attr("height", 20)
+         .attr("fill", "#7570B3")
+         svg.append("rect")
+         .attr("x", 140)
+         .attr("y", 35)
+         .attr("width", 20)
+         .attr("height", 20)
+         .attr("fill", "#666666")
+         svg.append("rect")
+         .attr("x", 140)
+         .attr("y", 60)
+         .attr("width", 20)
+         .attr("height", 20)
+         .attr("fill", "#E7298A")
+         svg.append("rect")
+         .attr("x", 140)
+         .attr("y", 85)
+         .attr("width", 20)
+         .attr("height", 20)
+         .attr("fill", "#A6761D")
+        </script>
+
+
+
+
+    </div>
+
+    <div class = "lineBar">
+        <canvas id = "lineBarCons"></canvas>
+    </div>
+
+    <div class = "line">
+        <canvas id = "ligneCons"></canvas>
+    </div>
+
+    <script>
+        var ctx = document.getElementById("barCons").getContext("2d");
+
+        var mixedChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                datasets: [
+                    {
+                    label: "2012",
+                    data: [872, 952, 266, 4708, 208, 9906, 604, 34, 256, 993, 826, 25159, 2313, 100, 904],
+                    backgroundColor: "lime",
+                    borderColor: "lime",
+                    borderWidth: 3,
+                    order: 1
+                    }, 
+                    {
+                    label: "2013",
+                    data: [942, 1052, 291, 5046, 209, 10636, 541, 35, 256, 929, 836, 23487, 3079, 69, 937],
+                    type: "bar",
+                    backgroundColor: "indigo",
+                    borderColor: "indigo",                       
+                    borderWidth: 3,
+                    order: 2
+                    },
+                    {
+                    label: "2014",
+                    data: [953, 1125, 295, 5561, 209, 10694, 596, 35, 256, 1094, 858, 24439, 3245, 86, 1023],
+                    type: "bar",
+                    backgroundColor: "orange",
+                    borderColor: "rgba(255,165,0,0.5)",
+                    borderWidth: 3,
+                    order: 3
+                    },
+                    {
+                    label: "2015",
+                    data: [1099, 1200, 305, 6023, 221, 9778, 966, 36, 265, 1211, 916, 25091, 3466, 177, 1138],
+                    type: "bar",
+                    backgroundColor: "yellow",
+                    borderColor: "yellow",
+                    borderWidth: 3,
+                    order: 4
+                    },
+                    {
+                    label: "2016",
+                    data: [1071, 1361, 316, 6615, 233, 11523, 1405, 38, 275, 1365, 968, 25300, 3734, 210, 1185],
+                    type: "bar",
+                    backgroundColor: "red",
+                    borderColor: "red",
+                    borderWidth: 3,
+                    order: 5
+                    },
+                    {
+                    label: "2017",
+                    data: [1139, 1452, 343, 6318, 235, 12120, 1550, 39, 285, 1342, 1014, 25774, 3952, 210, 1313],
+                    type: "bar",
+                    backgroundColor: "blue",
+                    borderColor: "blue",
+                    borderWidth: 3,
+                    order: 6
+                    }
+                ],
+                labels: ["Bénin", "Burkina Faso", "Cap Vert", "Côte d'Ivoire", "Gambie", "Ghana", "Guinée", 
+                        "Guinée Bissau", "Libéria", "Mali", "Niger", "Nigéria", "Sénégal", "Sierra Léone", "Togo"]
+            },
+
+            options: {
+                title: {
+                    text: "Consommation par années des pays (cliquez sur la légende pour voir une année)",
+                    display: true,
+                    fontColor: "white",
+                    fontSize: 14
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: "Pays",
+                            fontColor: "white",
+                            fontSize: 12
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        fontColor: "white",
+                        scaleLabel: {
+                                display: true,
+                                labelString: "Quantité de Consommation (millions KW/h)",
+                                fontColor: "white",
+                                fontSize: 12
+                        }
+                    }]
+                },
+                legend: {
+                    display: true,
+                },
+                tooltips:{
+                    intersect: false,
+                    }
+            }
+            
+        });
+    </script>
+    
+    <script>
+        var ctx = document.getElementById("lineBarCons").getContext("2d");
+        var mixedChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                datasets: [
+                    {
+                    label: "Consommation totale",
+                    data: [217, 852, 1315, 1593, 1816, 5418, 5662, 6076, 6500, 6934, 7142, 19789, 34271, 64657, 149250],                            
+                    backgroundColor: "#1E88E5",
+                    borderColor: "#1E88E5",
+                    borderWidth: 3,
+                    order: 2
+                    }, 
+                    {
+                    label: "Consommation totale",
+                    data: [217, 852, 1315, 1593, 1816, 5418, 5662, 6076, 6500, 6934, 7142, 19789, 34271, 64657, 149250],
+                    type: "line",
+                    borderColor: "lime",
+                    borderWidth: 3,
+                    order: 1
+                    }
+                ],
+                labels: ["Guinée Bissau", "Sierra Léone", "Gambie", "Libéria", "Cap Vert", "Niger", "Guinée", "Bénin", "Togo", "Mali",
+                         "Burkina Faso", "Sénégal", "Côte d'Ivoire", "Ghana", "Nigéria"]
+            },
+
+            options: {
+                title: {
+                    text: "Consommation totale des pays de 2012 à 2017",
+                    display: true,
+                    fontColor: "white",
+                    fontSize: 14
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: "Pays",
+                            fontColor: "white",
+                            fontSize: 12
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                                display: true,
+                                labelString: "Quantité de Consommation (millions KW/h)",
+                                fontColor: "white",
+                                fontSize: 12
+                        }
+                    }]
+                },
+                legend: {
+                    display: false
+                },
+                tooltips:{
+                    intersect: false,
+                    }
+            }                
+        });
+    </script>
+    
+    <script>
+        var ctx = document.getElementById('ligneCons').getContext('2d');
+        var chart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ["2012", "2013", "2014", "2015", "2016", "2017"],
+                datasets: [{
+                    label: "Consommation",
+                    borderColor: "#FF00FF",
+                    borderWidth: 3,
+                    data: [48101, 48345, 50469, 51892, 55599, 57086]
+                }]
+            },
+            options: {
+                title: {
+                    text: "Evolution de la quantité de consommation d'électricité de 2012 à 2017",
+                    display: true,
+                    fontColor: "white",
+                    fontSize: 14
+                },
+                elements: {
+                    point: {
+                        radius: 5,
+                        backgroundColor: "lime"
+                    }
+                },
+                scales: {
+                    xAxes: [{
+                        display: true,
+                        scaleLabel: {
+                            display: true,
+                            labelString: "Années",
+                            fontColor: "white",
+                            fontSize: 12
+                        }
+                    }],
+                    yAxes: [{
+                        display: true,
+                        scaleLabel: {
+                                display: true,
+                                labelString: "Quantité de consommation (millions KW/h)",
+                                fontColor: "white",
+                                fontSize: 12
+                        }
+                    }]
+                },
+                tooltips:{
+                    intersect: false,
+                    }
+            }
+        });
+    </script>
+    <section class="engine"><a href="https://mobirise.info/l"></a></section><section once="footers" class="cid-rXQuCGQ0my mbr-reveal" id="footer6-1c">
+        <div class="container">
+                <div class="media-container-row align-center mbr-white">
+                    <div class="col-12">
+                        <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                            © Copyright 2020 MSDA - Université de Thiès</p>
+                    </div>
+                </div>
+            </div>
+          
+        </section>
+  </body>
+</html>
